@@ -2,8 +2,10 @@
 
 For HTB machines:
 
-MonitorsTwo
+[MonitorsTwo](./MonitorsTwo.md)
 
-PC
+[PC](./PC.md)
 
-Busqueda
+[Busqueda](./Busqueda.md)
+
+[Sandworm](./sandworm.md)
