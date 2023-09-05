@@ -11,3 +11,5 @@ For HTB machines:
 [Sandworm](./sandworm.md)
 
 [Sau](./sau.md)
+
+[CozyHosting](./cozyhosting.md)
