@@ -16,4 +16,4 @@ For HTB machines:
 
 [Zipping](./zipping.md)  MEDIUM
 
-[Keeper](./keeper.md)  EASY
+[Keeper](./keeper/keeper.md)  EASY
