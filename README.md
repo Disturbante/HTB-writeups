@@ -2,16 +2,18 @@
 
 For HTB machines:
 
-[MonitorsTwo](./MonitorsTwo.md)
+[MonitorsTwo](./MonitorsTwo.md)  EASY
 
-[PC](./PC.md)
+[PC](./PC.md)  EASY
 
-[Busqueda](./Busqueda.md)
+[Busqueda](./Busqueda.md)  EASY
 
-[Sandworm](./sandworm.md)
+[Sandworm](./sandworm.md)  MEDIUM
 
-[Sau](./sau.md)
+[Sau](./sau.md)  EASY
 
-[CozyHosting](./cozyhosting.md)
+[CozyHosting](./cozyhosting.md)  EASY
 
-[Zipping](./zipping.md)
+[Zipping](./zipping.md)  MEDIUM
+
+[Keeper](./keeper.md)  EASY
