@@ -41,7 +41,7 @@ this looks like an actual ticketing service for helpdesk.
 so i tried to search it online and found this:
 	
 	https://bestpractical.com/request-tracker
-so it is an actula software, so i searched default credentials or exploits;
+so it is an actul software, so i searched default credentials or exploits;
 i had like with the first guess in fact they are:
 	
 	username: root
@@ -74,8 +74,8 @@ i downloaded the .dmp file for passcracking as this article about KeePass passwo
 i downloaded the file with scp (i could also use pwncat downlaod feature):
 	
 	scp lnorgaard@keeper.htb:/home/lnorgaard/KeePassDumpFull.dmp ./KeePassDumpFull.dmp
-after the password prompt we can go on and try to crack the KeePass acrhive with the script inside
-the github repo linked above (i only copy and saved the script to an exploit.py file):
+after the password prompt we can go on and try to crack the KeePass archive with the script inside
+the github repo linked above (i only copied and saved the script to an exploit.py file):
 	
 	python3 exploit.py KeePassDumpFull.dmp
 output:
