@@ -17,3 +17,5 @@ For HTB machines:
 [Zipping](./zipping.md)  MEDIUM
 
 [Keeper](./keeper/keeper.md)  EASY
+
+[Wifinetic](./wifinetic/wifinetic.md) EASY
