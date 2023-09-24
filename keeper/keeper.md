@@ -141,7 +141,7 @@ for test sake i runned the pwncat module to install persitence on the machine wi
 	
 so now we can log in with ssh as Disturbante user and enter as root whenever we want:
 	
-	ssh Disturbante@keeper.htb	#input Disturbante ass password
+	ssh Disturbante@keeper.htb	#input Disturbante as password
 and u will enter as root:
 	
 	Disturbante@keeper.htb's password: 
