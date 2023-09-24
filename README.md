@@ -2,7 +2,7 @@
 
 For HTB machines:
 
-[MonitorsTwo](./MonitorsTwo.md)  \textcolor{EASY}{green}
+[MonitorsTwo](./MonitorsTwo.md)  EASY
 
 [PC](./PC.md)  EASY
 
