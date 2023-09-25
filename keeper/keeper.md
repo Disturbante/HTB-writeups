@@ -118,7 +118,7 @@ To do that i found this discussion online:
 	https://superuser.com/questions/232362/how-to-convert-ppk-key-to-openssh-key-under-linux
 in particular this comand is perfect for us! :
 	
-	puttygen id_dsa.ppk -O private-openssh -o id_dsa
+	puttygen id_rsa.ppk -O private-openssh -o id_rsa
 so after installing puttygen with:	
 	
 	sudo apt install putty-tools
