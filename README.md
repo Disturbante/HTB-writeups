@@ -21,3 +21,5 @@ For HTB machines:
 [Wifinetic](./wifinetic/wifinetic.md) (EASY)
 
 [Clicker](./clicker/clicker.md) (MEDIUM) (ON GOING)
+
+[Analytics](./analytics/analytics.md) (EASY)
