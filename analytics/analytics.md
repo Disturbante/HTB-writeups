@@ -74,7 +74,7 @@ output:
 so we need to perform a dockerescape... but how??
 so i uploaded linpeas on the machine and found something strange:
 	
-![credenziali](./img/creds.png)
+![credenziali](./pic/creds.png)
 	
 inside the enviroment variable of the machine there are some creds.
 I tried them on ssh and worked!!
