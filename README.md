@@ -22,4 +22,4 @@ For HTB machines:
 
 [Clicker](./clicker/clicker.md) (MEDIUM) (ON GOING)
 
-[Analytics](./analytics/analytics.md) (EASY)
+
