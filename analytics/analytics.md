@@ -79,7 +79,9 @@ so i uploaded linpeas on the machine and found something strange:
 inside the enviroment variable of the machine there are some creds.
 I tried them on ssh and worked!!
 so i loged in and submitted the flag.
+<!-->
 Time to privesc.
+<!-->
 This part took me a while, in fact i dind't find anything on the box so i searched for recent exploits related to this machine,
 by running:
 	
