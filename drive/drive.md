@@ -91,6 +91,9 @@ When we visit the port on our browser we got this:
 	
 it is a gitea repo.
 to login we can use the username we found in the database for the martin user in the backup directory and we already have the password!
+<!---->
+This part is thank to my friend [@Ale](https://github.com/AleHelp) that rememberd the usernames from the database we found
+<!---->
 so when we log in (REMEMBER TO CHANGE THE PORT 3000 with 80 AGAIN ON LOCAL MACHINE) we have the repo of the website with also the bash script that they was telling above.
 <!-- -->
 Inside the script we have the password that zipped the backups:
