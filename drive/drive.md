@@ -169,11 +169,11 @@ But since it is a binary i dowloaded it and analyzed with ghidra:
 	
 ![ghidra](./pic/ghidra.png)
 	
-Even if it is a stripped binary we can analyze it in ghidra by searching the main func.
+It is not a stripped binary so we can analyze it in ghidra by searching the main func.
 <!-- -->
 The programm is a management software to administrate the doodleGrive website and database;
 to do so u need to log first with the username and password u see above (redacted of course).
-Once we log in we have this choice menu fro the _main_menu()_ functiuon:
+Once we log in we have this choice menu fro the _main_menu()_ function:
 	
 ![choices](./pic/choices.png)
 	
