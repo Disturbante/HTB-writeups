@@ -51,7 +51,7 @@ so for example if i create this file:
 and upload on the server i will see its /etc/passwd
 i like to automate stuff so i've written this python code to se the file i want:
 	
-```pytohn3	
+```pytohn	
 #!/bin/env python3
 
 import os
