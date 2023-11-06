@@ -24,3 +24,5 @@ For HTB machines:
 
 [Analytics](./analytics/analytics.md) (EASY)
 
+[Manager](https://github.com/Disturbante/HTB-Manager-writeup/blob/main/manager/manager.md) (MEDIUM)
+
