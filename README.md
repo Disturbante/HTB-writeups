@@ -26,3 +26,5 @@ For HTB machines:
 
 [Manager](https://github.com/Disturbante/HTB-Manager-writeup/blob/main/manager/manager.md) (MEDIUM)
 
+[Appsanity](https://github.com/Disturbante/HTB-Appsanity-writeup/blob/main/appsanity.md)  (HARD)
+
