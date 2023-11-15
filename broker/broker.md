@@ -258,7 +258,7 @@ ssh-keygen
 ```
 output:
 	
-![ssh key generation](./pic/kegen.png)
+![ssh key generation](./pic/key-gen.png)
 	
 I already created them so i just replaced the existing ones.<br>
 Now if we hit ls we can see that 2 new files are created:
