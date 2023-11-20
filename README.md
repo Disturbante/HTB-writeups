@@ -30,3 +30,4 @@ For HTB machines:
 
 [Broker](./broker/broker.md)  (EASY)
 
+[Codify](https://github.com/Disturbante/HTB-Codify-writeup/blob/main/codify.md)  (EASY)
