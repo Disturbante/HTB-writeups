@@ -33,3 +33,5 @@ For HTB machines:
 [Codify](https://github.com/Disturbante/HTB-Codify-writeup/blob/main/codify.md)  (EASY)
 
 [Napper](https://github.com/Disturbante/HTB-Napper-writeup/blob/main/napper.md)  (HARD)
+
+[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY)
