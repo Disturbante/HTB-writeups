@@ -34,4 +34,6 @@ For HTB machines:
 
 [Napper](https://github.com/Disturbante/HTB-Napper-writeup/blob/main/napper.md)  (HARD)
 
-[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY)
+[Surveillance](https://github.com/Disturbante/HTB-writeups/blob/main/surveillance/surveillance.md)  (MEDIUM) (Linux)
+
+[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY) (Linux)
