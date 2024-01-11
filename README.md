@@ -2,11 +2,11 @@
 
 For HTB machines:
 
-[MonitorsTwo](./MonitorsTwo.md)  (EASY)
+[MonitorsTwo](./MonitorsTwo.md)  (EASY) (Linux)
 
-[PC](./PC.md)  (EASY)
+[PC](./PC.md)  (EASY) (Linux)
 
-[Busqueda](./Busqueda.md)  (EASY)
+[Busqueda](./Busqueda.md)  (EASY) (Linux)
 
 [Sandworm](./sandworm.md)  (MEDIUM) (Linux)
 
