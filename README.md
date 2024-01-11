@@ -42,4 +42,4 @@ For HTB machines:
 
 [Surveillance](https://github.com/Disturbante/HTB-Surveillance-writeup/blob/main/surveillance.md) (MEDIUM) (Linux)
 
-[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY)
+[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY) (Linux)
