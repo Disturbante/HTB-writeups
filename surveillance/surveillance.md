@@ -25,7 +25,7 @@ echo '10.10.11.245	surveillance.htb' >> /etc/hosts
 ```
 Now we can visit the webserver and see this page:
 	
-![port 80](·/pic/80.png)
+![port 80](./pic/80.png)
 	
 The website is a presentation site for a surveillance-cam enterprise.<br>
 The website is pretty static so i started enumerating it by running:
