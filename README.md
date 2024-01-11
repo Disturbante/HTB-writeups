@@ -8,32 +8,34 @@ For HTB machines:
 
 [Busqueda](./Busqueda.md)  (EASY)
 
-[Sandworm](./sandworm.md)  (MEDIUM)
+[Sandworm](./sandworm.md)  (MEDIUM) (Linux)
 
-[Sau](./sau.md)  (EASY)
+[Sau](./sau.md)  (EASY) (Linux)
 
-[CozyHosting](./cozyhosting.md)  (EASY)
+[CozyHosting](./cozyhosting.md)  (EASY) (Linux)
 
-[Zipping](./zipping.md)  (MEDIUM)
+[Zipping](./zipping.md)  (MEDIUM) (Linux)
 
-[Keeper](./keeper/keeper.md)  (EASY)
+[Keeper](./keeper/keeper.md)  (EASY) (Linux)
 
-[Wifinetic](./wifinetic/wifinetic.md) (EASY)
+[Wifinetic](./wifinetic/wifinetic.md) (EASY) (Linux)
 
 [Clicker](./clicker/clicker.md) (MEDIUM) (ON GOING)
 
-[Analytics](./analytics/analytics.md) (EASY)
+[Analytics](./analytics/analytics.md) (EASY) (Linux)
 
-[Manager](https://github.com/Disturbante/HTB-Manager-writeup/blob/main/manager/manager.md) (MEDIUM)
+[Manager](https://github.com/Disturbante/HTB-Manager-writeup/blob/main/manager/manager.md) (MEDIUM) (Medium)
 
-[Appsanity](https://github.com/Disturbante/HTB-Appsanity-writeup/blob/main/appsanity.md)  (HARD)
+[Appsanity](https://github.com/Disturbante/HTB-Appsanity-writeup/blob/main/appsanity.md)  (HARD) (Windows)
 
-[Broker](./broker/broker.md)  (EASY)
+[Broker](./broker/broker.md)  (EASY) (Linux)
 
-[Codify](https://github.com/Disturbante/HTB-Codify-writeup/blob/main/codify.md)  (EASY)
+[Codify](https://github.com/Disturbante/HTB-Codify-writeup/blob/main/codify.md)  (EASY) (Linux)
 
-[Napper](https://github.com/Disturbante/HTB-Napper-writeup/blob/main/napper.md)  (HARD)
+[Napper](https://github.com/Disturbante/HTB-Napper-writeup/blob/main/napper.md)  (HARD) (Windows)
 
-[Surveillance](https://github.com/Disturbante/HTB-writeups/blob/main/surveillance/surveillance.md)  (MEDIUM) (Linux)
+[Hospital](https://github.com/Disturbante/HTB-Hospital-writeup/blob/main/hospital.md) (HARD) (Windows)
 
-[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY) (Linux)
+[Surveillance](https://github.com/Disturbante/HTB-Surveillance-writeup/blob/main/surveillance.md) (MEDIUM) (Linux)
+
+[Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY)
