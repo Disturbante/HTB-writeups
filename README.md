@@ -38,10 +38,10 @@ For HTB machines:
 
 [Devvortex](https://github.com/Disturbante/HTB-Devvortex-writeup/blob/main/devvortex.md) (EASY) (Linux)
 
-[Nocturnal](./nocturnal.md)  (EASY)  (Linux)
-
 [Ouija](https://github.com/Disturbante/HTB-Ouija-writeup/blob/main/ouija.md) (HARD) (Linux)
 
 [Surveillance](https://github.com/Disturbante/HTB-Surveillance-writeup/blob/main/surveillance.md) (MEDIUM) (Linux)
 
 [Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY) (Linux)
+
+[Nocturnal](./nocturnal.md)  (EASY)  (Linux)
