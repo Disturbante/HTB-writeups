@@ -49,7 +49,7 @@ PORT   STATE SERVICE REASON         VERSION
 
 <a href="view.php?username=amanda&file=privacy.odt">privacy.odt</a>
 ```
-- creds found inside odt file: 'arHkG7HAI68X8s1J'
+- creds found inside odt file: 'a[REDACTED]J'
 
 - amanda is an admin user
 - we now have access to /admin.php
@@ -57,13 +57,13 @@ PORT   STATE SERVICE REASON         VERSION
 
 - in the DB we have the hash of tobias:
 ```
-55c82b1ccd55ab219b3b109b07d5061d
+55c8[REDACTED]061d
 ```
 - cracked in crackstation: slowmotionapocalypse
 
 - users:
-  - amanda:arHkG7HAI68X8s1J
-  - tobias:slowmotionapocalypse
+  - amanda:a[REDACTED]1J
+  - tobias:s[REDACTED]e
 
 # SSH - tobias
 
@@ -79,5 +79,5 @@ PORT   STATE SERVICE REASON         VERSION
 - we found CVE-2023-46818 (https://github.com/bipbopbup/CVE-2023-46818-python-exploit/raw/refs/heads/main/exploit.py)
 - we are root by running:
 ```bash
-python3 exploit.py http://127.0.0.1:8081/ admin slowmotionapocalypse
+python3 exploit.py http://127.0.0.1:8081/ admin sl[REDACTED]se
 ```
