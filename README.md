@@ -45,3 +45,5 @@ For HTB machines:
 [Bizness](https://github.com/Disturbante/HTB-Bizness-writeup/blob/main/README.md) (EASY) (Linux)
 
 [Nocturnal](./nocturnal.md)  (EASY)  (Linux)
+
+[Environment](./environment.md)  (MEDIUM)  (Linux)
