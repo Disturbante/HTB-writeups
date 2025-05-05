@@ -104,7 +104,7 @@ Content-Type: image/png
 # www-data
 
 - we can read some config files and found db sqlite
-- users table:
+- users table (no luck in cracking):
 ```sql
 $2y$12$QPbeVM.u7VbN9KCeAJ.JA.WfWQVWQg0LopB9ILcC7akZ.q641r1gi
 $2y$12$i.h1rug6NfC73tTb8XF0Y.W0GDBjrY5FBfsyX2wOAXfDWOUk9dphm
