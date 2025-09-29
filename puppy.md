@@ -1,4 +1,4 @@
-# Fluffy (10.10.11.70)
+# Puppy (10.10.11.70)
 
 ```bash
 PORT      STATE SERVICE       REASON          VERSION
