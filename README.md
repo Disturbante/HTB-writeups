@@ -47,3 +47,5 @@ For HTB machines:
 [Nocturnal](./nocturnal.md)  (EASY)  (Linux)
 
 [Environment](./environment.md)  (MEDIUM)  (Linux)
+
+[Puppy](./puppy.md)  (MEDIUM)  (Windows)
